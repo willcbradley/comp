@@ -15,6 +15,7 @@ int NOT(int value) {
 }
 
 // defining XOR function
+// technically, (param1 + param2) % 2 is cleaner, but it's cooler to use the functions we've just made
 
 int XOR(int param1, int param2) {
     return AND(OR(param1, param2), NOT(AND(param1, param2)));
