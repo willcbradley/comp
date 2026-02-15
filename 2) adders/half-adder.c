@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "pastlogic.h"
 
-// function in case of reuse later; need to pass in memory addresses (starting with "&") for sum and carry
 void half_adder(unsigned int a, unsigned int b, unsigned int *sum, unsigned int *carry) {
     *sum = XOR(a,b);
     *carry = AND(a,b);
