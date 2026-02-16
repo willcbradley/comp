@@ -19,7 +19,6 @@ void half_adder_table() {
 }
 
 int main() {
-    unsigned int s, c;
     half_adder_table();
     return 0;
 }
