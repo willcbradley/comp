@@ -29,7 +29,7 @@ unsigned int ripple_adder(unsigned int a, unsigned int b) {
     unsigned int s, c;
     for (int i = 0; i <= (max_bit_count(a, b)); i++) {
         // access the i'th bit of both numbers by right shifting
-        // use built-in bitwise operators for multi-bit comparisons (same on line 23)
+        // use built-in bitwise logic operators for multi-bit comparisons (same on line 38)
         A = (a >> i) & 1;
         B = (b >> i) & 1;
         // apply full adder to current bits
