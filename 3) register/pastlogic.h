@@ -24,7 +24,6 @@ void half_adder(unsigned int a, unsigned int b, unsigned int *sum, unsigned int 
     *carry = AND(a,b);
 }
 
-
 void full_adder(unsigned int a, unsigned int b, unsigned int carry_in, unsigned int *sum, unsigned int *carry_out) {
     *sum = XOR((XOR(a, b)), carry_in);
     *carry_out = OR(AND(XOR(a, b), carry_in),AND(a,b));
@@ -47,7 +46,6 @@ unsigned int ripple_adder(unsigned int a, unsigned int b) {
     }
     return result; 
 }
-
 
 // bit counter
 unsigned int bit_count(unsigned int num) {
